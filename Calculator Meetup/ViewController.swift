@@ -20,7 +20,14 @@ class ViewController: UIViewController {
     @IBAction func touchDigit(_ sender: UIButton) {
         let digit = sender.currentTitle!
         
-        if userIsInTheMiddleOfTyping{
+        //****************************************************
+        //Assignment 1, Task 2: Floating Point Numbers
+        //****************************************************
+        
+        if display.text!.contains(".") && digit == "." {/*Do nothing*/}
+            
+        //****************************************************
+        else if userIsInTheMiddleOfTyping {
             let textCurrentlyInDisplay = display.text!
             display.text = textCurrentlyInDisplay + digit
         } else {
@@ -49,7 +56,7 @@ class ViewController: UIViewController {
             brain.performOperation(mathematicalSymbol)
         }
         if let result = brain.result{
-        displayValue = result
+            displayValue = result
         }
     }
     
