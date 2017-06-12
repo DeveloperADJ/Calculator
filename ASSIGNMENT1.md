@@ -1,8 +1,8 @@
 Required Tasks.
 
-1. Get the Calculator working as demonstrated in lectures 1 and 2.
+1.(Done) Get the Calculator working as demonstrated in lectures 1 and 2.
 
-2. Your Calculator already works with floating point numbers (e.g. if you touch 3 ÷ 4 =,
+2. (Starting) Your Calculator already works with floating point numbers (e.g. if you touch 3 ÷ 4 =,
 
 it will properly show 0.75), however, there is no way for the user to enter a floating point
 
