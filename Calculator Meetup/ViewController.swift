@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         let digit = sender.currentTitle!
         
         //****************************************************
-        //Assignment 1, Task 2: Floating Point Numbers
+        //Assignment I, Task 2: Floating Point Numbers
         //****************************************************
         
         if display.text!.contains(".") && digit == "." {/*Do nothing*/}

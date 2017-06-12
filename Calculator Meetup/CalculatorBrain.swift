@@ -37,6 +37,16 @@ struct CalculatorBrain {
         "√": Operation.unaryOperation(sqrt),
         "cos": Operation.unaryOperation(cos),
         "±": Operation.unaryOperation({ -$0 }),
+        
+        //****************************************************
+        //Assignment I, Task 3: Add operations
+        //****************************************************
+        "x₂": Operation.unaryOperation({$0 * $0}),
+        "log2": Operation.unaryOperation(log2),
+        "C": Operation.unaryOperation({$0 * 0}),
+        "^": Operation.binaryOperation({pow($0, $1)}),
+        //****************************************************
+        
         "×": Operation.binaryOperation({ $0 * $1 }),
         "÷": Operation.binaryOperation({ $0 / $1 }),
         "+": Operation.binaryOperation({ $0 + $1 }),
