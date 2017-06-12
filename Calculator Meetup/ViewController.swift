@@ -6,6 +6,9 @@
 //  Copyright © 2017 Arno de Jonge. All rights reserved.
 //
 
+//Does not perform any kind of calculations.
+// (Don't touch anymore).
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -28,27 +31,26 @@ class ViewController: UIViewController {
     
     var displayValue: Double {
         get {
-        return Double(display.text!)!
+            return Double(display.text!)!
         }
         set {
-        display.text = String(newValue)
+            display.text = String(newValue)
         }
     }
     
+    private var brain = CalculatorBrain()
+    
     @IBAction func performOperation(_ sender: UIButton) {
-        userIsInTheMiddleOfTyping = false
-        if let mathematicalSymbol = sender.currentTitle {
-            switch mathematicalSymbol {
-            case "π":
-                displayValue = Double.pi
-            case "√":
-                displayValue = sqrt(displayValue)
-            default:
-                break
-            }
-            
+        if userIsInTheMiddleOfTyping{
+            brain.setOperand(displayValue)
+            userIsInTheMiddleOfTyping = false
         }
-        
+        if let mathematicalSymbol = sender.currentTitle {
+            brain.performOperation(mathematicalSymbol)
+        }
+        if let result = brain.result{
+        displayValue = result
+        }
     }
     
     

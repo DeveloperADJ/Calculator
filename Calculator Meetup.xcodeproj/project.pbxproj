@@ -56,10 +56,10 @@
 		03870A311EE80203003FF4E9 /* Calculator Meetup */ = {
 			isa = PBXGroup;
 			children = (
-				03870A341EE80203003FF4E9 /* ViewController.swift */,
-				03870A361EE80203003FF4E9 /* Main.storyboard */,
-				03870A441EE80218003FF4E9 /* Supporting Files */,
 				031F6F191EEE989F00AA608A /* CalculatorBrain.swift */,
+				03870A361EE80203003FF4E9 /* Main.storyboard */,
+				03870A341EE80203003FF4E9 /* ViewController.swift */,
+				03870A441EE80218003FF4E9 /* Supporting Files */,
 			);
 			path = "Calculator Meetup";
 			sourceTree = "<group>";
