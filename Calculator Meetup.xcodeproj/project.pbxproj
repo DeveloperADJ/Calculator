@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031F6F1A1EEE989F00AA608A /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031F6F191EEE989F00AA608A /* CalculatorBrain.swift */; };
 		03870A331EE80203003FF4E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03870A321EE80203003FF4E9 /* AppDelegate.swift */; };
 		03870A351EE80203003FF4E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03870A341EE80203003FF4E9 /* ViewController.swift */; };
 		03870A381EE80203003FF4E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03870A361EE80203003FF4E9 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031F6F191EEE989F00AA608A /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		03870A2F1EE80203003FF4E9 /* Calculator Meetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator Meetup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03870A321EE80203003FF4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03870A341EE80203003FF4E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +56,23 @@
 		03870A311EE80203003FF4E9 /* Calculator Meetup */ = {
 			isa = PBXGroup;
 			children = (
-				03870A321EE80203003FF4E9 /* AppDelegate.swift */,
 				03870A341EE80203003FF4E9 /* ViewController.swift */,
 				03870A361EE80203003FF4E9 /* Main.storyboard */,
+				03870A441EE80218003FF4E9 /* Supporting Files */,
+				031F6F191EEE989F00AA608A /* CalculatorBrain.swift */,
+			);
+			path = "Calculator Meetup";
+			sourceTree = "<group>";
+		};
+		03870A441EE80218003FF4E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03870A321EE80203003FF4E9 /* AppDelegate.swift */,
 				03870A391EE80203003FF4E9 /* Assets.xcassets */,
 				03870A3B1EE80203003FF4E9 /* LaunchScreen.storyboard */,
 				03870A3E1EE80203003FF4E9 /* Info.plist */,
 			);
-			path = "Calculator Meetup";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				031F6F1A1EEE989F00AA608A /* CalculatorBrain.swift in Sources */,
 				03870A351EE80203003FF4E9 /* ViewController.swift in Sources */,
 				03870A331EE80203003FF4E9 /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +316,7 @@
 				03870A431EE80203003FF4E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
