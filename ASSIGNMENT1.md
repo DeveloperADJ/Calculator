@@ -2,7 +2,7 @@ Required Tasks.
 
 1.(Done) Get the Calculator working as demonstrated in lectures 1 and 2.
 
-2. (Starting) Your Calculator already works with floating point numbers (e.g. if you touch 3 ÷ 4 =,
+2. (Done) Your Calculator already works with floating point numbers (e.g. if you touch 3 ÷ 4 =,
 
 it will properly show 0.75), however, there is no way for the user to enter a floating point
 
@@ -14,7 +14,7 @@ button in your calculator. Don’t worry too much about precision or significant
 
 in this assignment (doing so is Extra Credit).
 
-3. Add some more operations buttons to your calculator such that it has at least a dozen
+3. (Busy) Add some more operations buttons to your calculator such that it has at least a dozen
 
 operations total (it can have even more if you like). You can choose whatever
 
