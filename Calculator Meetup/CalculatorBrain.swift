@@ -10,6 +10,9 @@
 
 import Foundation
 
+func changeSign(operand: Double) -> Double {
+    return -operand
+}
 
 struct CalculatorBrain {
     
@@ -24,7 +27,8 @@ struct CalculatorBrain {
         "π": Operation.constant(Double.pi),
         "e": Operation.constant(M_E),
         "√": Operation.unaryOperation(sqrt),
-        "cos": Operation.unaryOperation(cos)
+        "cos": Operation.unaryOperation(cos),
+        "±": Operation.unaryOperation(changeSign)
     ]
     
     mutating func performOperation(_ symbol: String){
@@ -32,10 +36,10 @@ struct CalculatorBrain {
             switch operation {
             case .constant(let value):
                 accumulator = value
-            case .unaryOperation:
-                break
-            default:
-                break
+            case .unaryOperation(let function):
+                if accumulator != nil {
+                    accumulator = function(accumulator!)
+                }
             }
         }
     }
