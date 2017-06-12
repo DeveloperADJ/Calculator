@@ -14,7 +14,7 @@ button in your calculator. Don’t worry too much about precision or significant
 
 in this assignment (doing so is Extra Credit).
 
-3. (Busy) Add some more operations buttons to your calculator such that it has at least a dozen
+3. (Done) Add some more operations buttons to your calculator such that it has at least a dozen
 
 operations total (it can have even more if you like). You can choose whatever
 
@@ -22,13 +22,13 @@ operations appeal to you. The buttons must arrange themselves nicely in portrait
 
 landscape modes on all iPhone 6’s and 7’s.
 
-4. Use color to make your UI look nice. At the very least, your operations buttons must
+4. (Done)Use color to make your UI look nice. At the very least, your operations buttons must
 
 be a different color than your keypad buttons, but otherwise you can use color in
 
 whatever way you think looks nice.
 
-5. Add a Bool property to your CalculatorBrain called resultIsPending which returns
+5. (Busy)Add a Bool property to your CalculatorBrain called resultIsPending which returns
 
 whether there is a binary operation pending.
 
